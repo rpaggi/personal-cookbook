@@ -24,11 +24,15 @@ $(window).resize(function() {
 	
 	if (tamanhoJanela < 990) { 
 		$('#listaMenu').css('left', '-500px').addClass('side-fechado');
-		// $('#listaMenu').append( "<div id='menuClose' class='nav-toggle'><a href='#''>[x]</a></div>" );
-		$('#sideBar').append( "<div class='nav-toggle' id='menuOpen'>Menu</div>" );
+		$('#listaMenu').css('visible', 'none');
+
+		if(!$("#menuOpen").hasClass("nav-toggle")){
+			$('#sidebar').append( "<div class='nav-toggle' id='menuOpen'>Menu</div>" );
+		}
 	} else {
 		$('#listaMenu').css('left', '0px').addClass('side-fechado');
-		$('.nav-toggle').remove();
+		$('#listaMenu').css('visible', 'none');
+		$('#menuOpen').remove();
 	}
 	
 	menu();
@@ -39,8 +43,8 @@ $(document).ready(function() {
 	
 	if (tamanhoJanela < 990) { 
 		$('#listaMenu').css('left', '-500px').addClass('side-fechado');
-		// $('#listaMenu').append( "<div id='menuClose' class='nav-toggle'><a href='#''>[x]</a></div>" );
-		$('#sideBar').append( "<div class='nav-toggle' id='menuOpen'>Menu</div>" );
+		$('#listaMenu').append( "<div id='menuClose' class='nav-toggle'><a href='#''>[x]</a></div>" );
+		$('#sidebar').append( "<div class='nav-toggle' id='menuOpen'>Menu</div>" );
 	} else {
 		$('#listaMenu').css('left', '0px').addClass('side-fechado');
 		$('.nav-toggle').remove();
