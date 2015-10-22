@@ -17,6 +17,27 @@
 		margin-left: 22.22222222222222%;
 }
 
+li{
+	display: block;
+	margin-left: -25px;
+}
+ul{
+	margin-top: 0px;
+	padding-top: 10px;
+	width: 50%;
+}
+
+#menuClose{
+	float:right;
+	margin-right: 10px;
+	margin-top: -5px;
+}
+
+#menuOpen{
+	padding-left: 6px;
+	padding-top:  3px;
+}
+
 @media screen and (max-width: 990px){
 	#master{
 		border: 1px solid red;
@@ -32,8 +53,12 @@
 		float: none;
 		margin-left: 0;
 	}
+	#listaMenu{
+		background-color: #aaa;
+		position: absolute;
+		padding-bottom: 1rem;
+	}
 }
-
 
 /*Clearfix para evitar colapso*/
 .clearfix:before,
