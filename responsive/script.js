@@ -24,14 +24,14 @@ $(window).resize(function() {
 	
 	if (tamanhoJanela < 990) { 
 		$('#listaMenu').css('left', '-500px').addClass('side-fechado');
-		$('#listaMenu').css('visible', 'none');
+		$('#menuClose').css('visibility', 'visible');
 
 		if(!$("#menuOpen").hasClass("nav-toggle")){
 			$('#sidebar').append( "<div class='nav-toggle' id='menuOpen'>Menu</div>" );
 		}
 	} else {
 		$('#listaMenu').css('left', '0px').addClass('side-fechado');
-		$('#listaMenu').css('visible', 'none');
+		$('#menuClose').css('visibility', 'hidden');
 		$('#menuOpen').remove();
 	}
 	
@@ -43,11 +43,15 @@ $(document).ready(function() {
 	
 	if (tamanhoJanela < 990) { 
 		$('#listaMenu').css('left', '-500px').addClass('side-fechado');
-		$('#listaMenu').append( "<div id='menuClose' class='nav-toggle'><a href='#''>[x]</a></div>" );
-		$('#sidebar').append( "<div class='nav-toggle' id='menuOpen'>Menu</div>" );
+		$('#menuClose').css('visibility', 'visible');
+
+		if(!$("#menuOpen").hasClass("nav-toggle")){
+			$('#sidebar').append( "<div class='nav-toggle' id='menuOpen'>Menu</div>" );
+		}
 	} else {
 		$('#listaMenu').css('left', '0px').addClass('side-fechado');
-		$('.nav-toggle').remove();
+		$('#menuClose').css('visibility', 'hidden');
+		$('#menuOpen').remove();;
 	}
 	
 	menu();
