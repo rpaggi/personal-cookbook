@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" /> 
+	<title>Carrossel</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="jcarousellite.js"></script>
+	<script type="text/javascript">
+		var keyPressed = false;
+
+		function verificaTecla(e)
+		{
+			if (e.keyCode) // testa se é IE
+				var tecla = e.keyCode; // variavel tecla é igualada ao valor da tecla pressionada no IE
+			else if (e.which) // testa se é FF
+		    	var tecla = e.which; // variavel tecla é igualada ao valor da tecla pressionada no FF
+		    if((tecla == 9 || tecla == 13) && !keyPressed){
+		    	$('.next').click();
+		    	$('#field2').focus();
+		    }
+		}
+	</script>
+	<style type="text/css">
+		/*reset*/
+		*{
+		    margin: 0;
+		    padding: 0;
+		    list-style: none ;
+		    outline: 0;
+		    font-family: 'Arial','Sans-Serif';
+		}
+
+		#content {
+			margin: 0 auto;
+			width: 80%;
+			height: 200px;
+		}
+
+		#carrossel {
+			float: left;
+			width: 100%;
+			height: 150px;
+			overflow: hidden;
+		}
+
+		#carrossel ul li {
+			float: left;
+			width: 100%;
+			height: 146px;
+		}
+
+		#menu-carrossel {
+			float: left;
+			width: 100%;
+			clear: both;
+			text-align: center;
+		}
+	</style>
+</head>
+<body onKeyPress="verificaTecla(event)">
+	<div id="content">
+		<div id="carrossel">
+			<form name="teste" method="post">
+			<ul>
+				<li><input type="text" tabindex="-1" id="field1" value="1"></li>
+				<li><input type="text" tabindex="-1" id="field2" value="2"></li>
+				<li><input type="text" tabindex="-1" id="field3" value="3"></li>
+				<li><input type="text" tabindex="-1" id="field4" value="4"></li>
+			</ul>		
+		</div>
+		<nav id="menu-carrossel">
+			<a href="#" class="prev" title="Anterior"><</a>
+			<a href="#" class="next" title="Próximo">></a>	
+		</nav>
+		<script type="text/javascript">
+			$(function() {
+			    $("#carrossel").jCarouselLite({
+			        btnPrev: '.prev', 
+			        btnNext: '.next',
+			        visible: 1,
+			        circular: false
+			    })
+			})
+		</script>
+	</div>
+</body>
+</html>

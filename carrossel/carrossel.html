@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" /> 
+	<title>Carrossel</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="jcarousellite.js"></script>
+	<style type="text/css">
+	#content{
+		width: 80%;	
+		margin: 0 auto;
+	}
+	#carrossel{
+        width: 100%;
+	}
+
+	#carrossel ul li{
+		width: 100%;
+	}
+
+	#carrossel input{
+		width: 99%;
+	}
+	</style>
+</head>
+<body>
+	<div id="content">
+		<div id="carrossel">
+			<form name="teste" method="post">
+			<ul>
+				<li><input type="text" id="field1" value="1"></li>
+				<li><input type="text" id="field2" value="2"></li>
+				<li><input type="text" id="field3" value="3"></li>
+				<li><input type="text" id="field4" value="4"></li>
+			</ul>		
+		</div>
+		<nav id="menu-carrossel">
+			<a href="#" class="prev" title="Anterior"><</a>
+			<a href="#" class="next" title="Próximo">></a>	
+		</nav>
+		<script type="text/javascript">
+			$(function() {
+			    $("#carrossel").jCarouselLite({
+			        btnPrev: '.prev', 
+			        btnNext: '.next',
+			        visible: 1,
+			        circular: false,
+			        speed: 600
+			    })
+			})
+		</script>
+	</div>
+</body>
+</html>
