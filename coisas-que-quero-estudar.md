@@ -10,5 +10,7 @@ Esta é uma lista das coisas que quero estudar e/ou aprimorar, e coisas que esto
 - Grunt
 - JavaScript
 - Jekyll
+- Laravel
 - NodeJS
+- Ruby on Rails
 - Stylus
