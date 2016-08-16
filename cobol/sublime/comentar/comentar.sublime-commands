@@ -1,0 +1,11 @@
+[{
+	"caption": "Comentar Linhas: insere comentário no inicio das linhas",
+	"command": "comentar_linhas"
+},{
+	"caption": "Comentar: insere comentário no inicio da linha atual",
+	"command": "comentar"
+},{
+	"caption": "Mudar Texto Cometario: Muda texto salvo do comentario",
+	"command": "mudar_texto_comentario"
+}
+]

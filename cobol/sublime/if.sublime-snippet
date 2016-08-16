@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+ IF  ${1:campo-1}            ${2:condicao} ${3:campo-2}
+    ${4:procedimento}
+ END-IF.   
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	     <tabTrigger>IF</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	     <scope>source.cobol</scope>
+</snippet>
