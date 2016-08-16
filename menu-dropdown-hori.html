@@ -5,7 +5,7 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>Teste menu dropdown</title>
+	<title>BurgerShop</title>
 
 	<style type="text/css" media="screen">
 		*{
@@ -15,6 +15,7 @@
 		body{
 			background: rgb(110, 150, 200);
 			color: rgb(230,240,255);
+			font-family: "Trebuchet MS";
 		}
 		.main-menu{
 			margin: 0;
@@ -60,32 +61,52 @@
 		}
 
 		.main-menu li:hover ul {
-			display: block; 
+			display: block;
+		}
+
+		content{
+			padding: 1em 2em;
+		}
+
+		footer {
+		    position: absolute;
+		    z-index: 10;
+		    bottom: 0;
+		    height: 2em;
+		    width: 100%;
+		    padding-top: 0.8em;
+			background: rgb(100, 130, 180);
+			text-align: center;
 		}
 
 	</style>
 </head>
 <body>
-	<div class="main-menu">
+	<header>
+		<div class="main-menu">
 		<ul>
 			<li class="main-item"><a href="#" title="">Home</a>
 				<ul>
-					<li><a href="#" title="">Home 1</a></li>
-					<li><a href="#" title="">Home 2</a></li>
-					<li><a href="#" title="">Home 3</a></li>
+				<li><a href="#" title="">Home 1</a></li>
+				<li><a href="#" title="">Home 2</a></li>
+				<li><a href="#" title="">Home 3</a></li>
 				</ul>
 			</li>
 			<li class="main-item"><a href="#" title="">Help</a>
 				<ul>
-					<li><a href="#" title="">Help 1</a></li>
-					<li><a href="#" title="">Help 2</a></li>
-					<li><a href="#" title="">Help 3</a></li>
+				<li><a href="#" title="">Help 1</a></li>
+				<li><a href="#" title="">Help 2</a></li>
+				<li><a href="#" title="">Help 3</a></li>
 				</ul>
 			</li>
 		</ul>
-	</div>
+		</div>
+	</header>
 	<content>
-		<h1>Teste da xurupita!</h1>
+		<h1>SISTEMA FULERO!</h1>
 	</content>
+	<footer>
+		BurgerShop - Versão 1.0 - Licenciado para InRock Burger
+	</footer>
 </body>
 </html>
