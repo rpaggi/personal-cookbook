@@ -92,29 +92,55 @@ Entrar na pasta e usar o compando
 
 - Ele é um facilitador das tarefas do framework
 
-> php artisan clear-compiled
-Limpa o cache das classes compiladas.
+---
 
-> php artisan down
-Coloca a aplicação em manutenção.
+> php artisan clear-compiled  
 
-> php artisan up
-Tia a aplicação do modo manutenção.
+	Limpa o cache das classes compiladas.
 
-> php artisan env
-Mostra em qual ambiente a aplicação está rodando
+---
 
-> php artisan optmize
-Optimiza a aplicação gerando cache de tudo fazendo que tenha uma melhora de performance
+> php artisan down  
 
-> php artisan migrate
-Roda os arquivos de migração de banco de dados
+	Coloca a aplicação em manutenção.
 
-> php artisan app:name
-Este comando você pode mudar o namespace da sua aplicação
+---
 
-> php artisan tinker
-É um console interativo do Laravel, onde você consegue acessar inclusive suas próprias classes. Você consegue programar PHP dentro dele.
+> php artisan up  
+
+	Tira a aplicação do modo manutenção.
+
+---
+
+> php artisan env  
+
+	Mostra em qual ambiente a aplicação está rodando
+
+---
+
+> php artisan optmize  
+
+	Optimiza a aplicação gerando cache de tudo fazendo que tenha uma melhora de performance
+
+---
+
+> php artisan migrate  
+
+	Roda os arquivos de migração de banco de dados
+
+---
+
+> php artisan app:name  
+
+	Este comando você pode mudar o namespace da sua aplicação
+
+---
+
+> php artisan tinker  
+
+	É um console interativo do Laravel, onde você consegue acessar inclusive suas próprias classes. Você consegue programar PHP dentro dele.
+
+---
 
 ## Módulo 2
 
